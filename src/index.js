@@ -6,10 +6,10 @@ import Login from "./Login";
 
 ReactDOM.render(
   <Auth0Provider
-    domain=""
-    clientId=""
+    domain="brucke.auth0.com"
+    clientId="wLSIP47wM39wKdDmOj6Zb5eSEw3JVhVp"
     redirectUri={window.location.origin}
-    audience=""
+    audience="https://brucke.auth0.com/api/v2/"
     useRefreshTokens={true}
     cacheLocation="localstorage"
   >

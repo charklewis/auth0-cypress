@@ -6,14 +6,14 @@ Cypress.Commands.add("login", (user) => {
   cy.goToHomePage();
   cy.clearLocalStorage();
 
-  const client_id = "";
+  const client_id = "wLSIP47wM39wKdDmOj6Zb5eSEw3JVhVp";
   const client_secret = "";
-  const audience = "";
-  const scope = "";
+  const audience = "https://brucke.auth0.com/api/v2/";
+  const scope = "openid profile email offline_access";
 
   cy.request({
     method: "POST",
-    url: "",
+    url: "https://brucke.auth0.com/oauth/token",
     body: {
       grant_type: "password",
       username: user.email,
